@@ -1,0 +1,87 @@
+<!doctype html>
+<html style="height:100%;">
+<head>
+    <title>Download Annotations</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<bodystyle="background-color:powderblue;">
+    <div class="container">
+        <center>
+        <div class="jumbotron" bg-dark text-white style="margin-top:20px;">      
+    <style>
+    body {
+        background-color: #08102c;
+    }
+
+</style>
+            <h1 style="margin:-20px 0 40px 0;">Avistos Image Annotation Tool</h1>
+            
+
+            <form enctype="multipart/form-data" method="post">
+                <label class="btn btn-default">
+                    <input id="file" name="file" type="file" multiple/>
+                </label>
+                <br>
+                <button type="submit" name="button_5" class="btn btn-success" style="margin-top:30px;">Submit</button>
+            </form>
+        </div>
+        </center>
+    </div>
+</div>
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+  <h2  style="color:rgb(212, 201, 48);">Welcome  {{ dummy1 }}</h2>
+  
+  </div>
+    <script>
+        var folder = document.getElementById("folder");
+        console.log(folder.value)
+    </script>
+
+<body><left>
+    <h1 style="color:rgb(212, 201, 48);">started session on:<br>
+        {{date_time_click1}}</h1>
+    
+    <form method="POST" action="/click1">
+        <input type="submit" name="button_1" value="Start">
+    </form>
+</left></body>
+
+<body><centre>
+    <h2 style="color:rgb(212, 201, 48);">Stopped Session on:<br>
+        {{date_time_click2}}</h1>
+        
+    <form method="POST" action="/click2">
+        <input type="submit" name="button_2"  value="Stop">
+    </form>
+</centre>
+</body>
+
+<body><centre>
+    <h2 style="color:rgb(212, 201, 48);">Login TimeDuration:<br>
+        {{date_time_click3}}</h1>
+        
+    <form method="POST" action="/click3">
+        <input type="submit" name="button_6"  value="Duration">
+    </form>
+</centre>
+</body>
+
+<body><centre>        
+    <form method="POST" action="/dashboard1">
+        <input type="submit" name="button_12"  value="Home">
+    </form>
+</centre>
+</body>
+
+<body><center>
+    <h3 style="color:rgb(212, 201, 48);">Login on:<br>
+    {{datetime1}}</h2>
+</body>
+
+
+  
+</html>
+
+
+
