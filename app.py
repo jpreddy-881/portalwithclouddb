@@ -39,7 +39,7 @@ from flask_migrate import Migrate
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "Thisissupposedtobesecret!"
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://avistosadmindb@avistostooldb:%s@avistostooldb.mysql.database.azure.com/avistostooldb" % quote('avistos@123')
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://jpr@avistosdb01:%s@avistosdb01.mysql.database.azure.com/avistos" % quote('Prakash.881')
 
 bootstrap = Bootstrap(app)
 
