@@ -76,6 +76,7 @@ class LoginForm(FlaskForm):
     client = StringField("client ", validators=[InputRequired(), Length(min=4, max=25)])
     remember = BooleanField("remember me")
 
+    
 
 class RegisterForm(FlaskForm):
     email = StringField(
