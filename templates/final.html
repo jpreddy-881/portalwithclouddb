@@ -13,41 +13,14 @@
             <a href="/download" download="annotations.csv" target="_blank">
                 <button style="margin-top:10px;" class="btn btn-success">Download</button>
             </a> 
+            <a href="/logout" >
+                <button style="margin-top:10px;" class="btn btn-success">Logout</button>
+            </a>
+            <a href="/repo" >
+                <button style="margin-top:10px;" class="btn btn-success">Save To Repository</button>
+            </a> 
         </div>
         </center>
     </div>
-    <center>
-        <h2 style="color:rgb(27, 21, 10);"> Logged out on:<br>
-        {{datetime2}}</h2>
-    
 </body>
-
-<body><centre>
-    <h2 style="color:rgb(212, 201, 48);">Stopped Session on:<br>
-        {{date_time_click2}}</h1>
-        
-    <form method="POST" action="/click2">
-        <input type="submit" name="button_2"  value="Stop">
-    </form>
-</centre>
-</body>
-
-<body><centre>
-    <h2 style="color:rgb(212, 201, 48);">Login TimeDuration:<br>
-        {{date_time_click3}}</h1>
-        
-    <form method="POST" action="/click3">
-        <input type="submit" name="button_6"  value="Duration">
-    </form>
-</centre>
-</body>
-
-<body><centre>        
-    <form method="POST" action="/table">
-        <input type="submit" name="button_88"  value="Annotation Summary">
-    </form>
-</centre>
-</body>
-
-
 </html>
