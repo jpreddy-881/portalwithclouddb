@@ -24,7 +24,7 @@ app = Flask(__name__)
 app.config["SECRET_KEY"] = "Thisissupposedtobesecret!"
 app.config[
     "SQLALCHEMY_DATABASE_URI"
-] = "sqlite:///C:\\Users\\damodar.pulimamidi\\Desktop\\28_2\\database.db"
+] = "mysql+pymysql://jpr@avistosdb123:%s@avistosdb123.mysql.database.azure.com/avistos" % quote('Prakash@881')
 
 bootstrap = Bootstrap(app)
 
