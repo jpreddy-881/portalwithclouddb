@@ -29,6 +29,7 @@ app.config[
 bootstrap = Bootstrap(app)
 
 db = SQLAlchemy(app)
+migrate = Migrate(app, db)
 
 login_manager = LoginManager()
 login_manager.init_app(app)
